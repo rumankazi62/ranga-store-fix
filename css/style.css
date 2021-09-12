@@ -14,16 +14,18 @@ body {
 }
 .search-box {
   border: 1px solid rgb(3, 118, 211);
-  width: 281px;
-  border-radius: 5px;
+  width: 280px;
+  height: 35px;
+  border-radius: 7px;
   margin: auto;
   margin-top: 50px;
+  margin-bottom: 30px;
   border-right: none;
 }
 .search-button {
   padding: 10px 50px;
   border-radius: 25px;
-  margin-left: 20px;
+  margin-left: 23px;
 }
 #all-products {
   display: grid;
@@ -57,8 +59,18 @@ body {
   margin-right: 30px;
   position: fixed;
 }
+.single-cart {
+  width: 400px;
+  height: 500px;
+  padding-top: 50px;
+  margin: 14px;
+  box-shadow: 10px 10px 20px gray;
+}
 .cart-main {
   padding-right: 30px;
+}
+.color {
+  color: salmon;
 }
 @media only screen and (max-width: 768px) {
   #all-products {
