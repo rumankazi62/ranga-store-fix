@@ -30,7 +30,6 @@ body {
 #all-products {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  /* border: 1px solid black; */
   text-align: center;
   width: 100%;
   margin: auto;
@@ -38,6 +37,8 @@ body {
   justify-content: center;
 }
 .single-product {
+  background-color: #fffaedcf;
+  color: black;
   padding: 10px;
   transition: 0.6s;
 }
@@ -52,6 +53,8 @@ body {
 }
 .cart {
   width: 350px;
+  background-color: #263362cf;
+  color: white;
   /* border: 1px solid green; */
   padding: 10px;
   box-shadow: 10px 10px 20px gray;
@@ -70,6 +73,9 @@ body {
   padding-right: 30px;
 }
 .color {
+  color: salmon;
+}
+.icon-color {
   color: salmon;
 }
 @media only screen and (max-width: 768px) {

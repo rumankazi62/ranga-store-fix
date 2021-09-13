@@ -19,15 +19,13 @@ const showProducts = (products) => {
       <h3>${product.title}</h3>
       <p class="text-white-50">Category: ${product.category}</p>
       <h2 style="color: salmon;">Price: $${product.price}</h2>
-      <p class="text-warning"><span>Rate: ${product.rating.rate}</span><br><span>Ratings: ${product.rating.count}</span></p>
+      <p><span><i class="fas fa-star icon-color"></i>${product.rating.rate} </span><span> <i class="fas fa-user-alt icon-color"></i>(${product.rating.count})</span></p>
       <button onclick="addToCart(${product.id},${product.price})" id="addToCart-btn" class="buy-now btn btn-success">add to cart</button>
       <button id="details-btn" class="btn btn-danger">Details</button></div>
       `;
     document.getElementById("all-products").appendChild(div);
   }
-};
-
-
+}
 let count = 0;
 const addToCart = (id, price) => {
   count = count + 1;
